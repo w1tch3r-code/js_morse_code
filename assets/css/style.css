@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+/* ========================================================== 
+                            Resets
+========================================================== */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+/* ========================================================== 
+                            Fonts
+========================================================== */
+
+/* ========================================================== 
+                        Body und Wrapper
+========================================================== */
+
+body {
+	font-family:'Times New Roman', Times, serif;
+	background-color: #0d1117;
+	scroll-behavior: smooth;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper {
+	width: clamp(500px, 50%, 800px);
+	margin: 0 auto;
+	border-radius: 10px;
+	background: lightgray;
+}
+
+.morse__code__wrapper {
+	padding: 40px;
+}
+
+/* ========================================================== 
+                            Content
+========================================================== */
+
+form {
+	text-align: center;
+}
+
+textarea {
+	resize: none;
+	font-size: 1rem;
+	border-radius: 10px;
+	padding: 10px 20px;
+	width: 70%;
+	font-size: 1.2rem;
+}
+
+
+input[type="submit"] {
+	font-size: 1rem;
+	border-radius: 10px;
+	padding: 15px 20px;
+	background: #2d7fdd;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin: 10px 0 20px 0;
+	cursor: pointer;
+	border: none;
+	margin-block: 20px;
+}
+
+.output {
+	display: none;
+	color: white;
+	background-color: #2d7fdd;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 1.8rem;
+	margin-block-start: 20px;
+}
